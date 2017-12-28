@@ -1,10 +1,15 @@
 <template>
-  <modal name="input-focus-modal"
-         :height="150"
-         :adaptive="true"
-         @opened="opened">
+  <modal
+    name="input-focus-modal"
+    :height="150"
+    :adaptive="true"
+    @opened="opened">
     <div style="padding: 30px; text-align: center">
-      <input class="huge-font" type="text" placeholder="email" ref="email">
+      <input
+        class="huge-font"
+        type="text"
+        placeholder="email"
+        ref="email">
     </div>
   </modal>
 </template>
@@ -12,12 +17,12 @@
 export default {
   name: 'InputFocusModal',
   methods: {
-    opened (event) {
-      console.log(this.$refs.email)
+    opened() {
+      console.log(this.$refs.email);
     //  this.$refs.email.focus();
     }
   }
-}
+};
 </script>
 <style>
   input.huge-font {

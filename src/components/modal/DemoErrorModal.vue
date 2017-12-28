@@ -1,13 +1,14 @@
 <template>
-  <modal name="error-modal"
-         :classes="['v--modal', 'error-modal', hasBugs && 'has-bugs']"
-         :pivot-y="0.2"
-         :width="400"
-         :height="300"
-         @before-open="beforeOpen"
-         @before-close="beforeClose">
+  <modal
+    name="error-modal"
+    :classes="['v--modal', 'error-modal', hasBugs && 'has-bugs']"
+    :pivot-y="0.2"
+    :width="400"
+    :height="300"
+    @before-open="beforeOpen"
+    @before-close="beforeClose">
     <div class="error-modal-content">
-      <div class="bugs-label">bugs: {{bugCount}}</div>
+      <div class="bugs-label">bugs: {{ bugCount }}</div>
       <button @click="createBug">Create a bug</button>
       <button @click="fixBug">Fix a bug</button>
 
@@ -15,7 +16,7 @@
         You will be able to close the window only if you have fixed all the bugs :)
       </div>
       <sub :style="{opacity: hasBugs ? 1 : 0}">
-        {{bugCount}} bugs to fix
+        {{ bugCount }} bugs to fix
       </sub>
     </div>
   </modal>
@@ -23,38 +24,38 @@
 <script>
 export default {
   name: 'DemoErrorModal',
-  data () {
+  data() {
     return {
       bugCount: 0,
       message: '',
       hasBugs: false
-    }
+    };
   },
   methods: {
-    createBug () {
-      this.bugCount++
+    createBug() {
+      this.bugCount += 1;
     },
 
-    fixBug () {
-      this.bugCount = Math.max(this.bugCount - 1, 0)
-      this.hasBugs = false
+    fixBug() {
+      this.bugCount = Math.max(this.bugCount - 1, 0);
+      this.hasBugs = false;
     },
 
-    beforeOpen (event) {
-      this.bugCount = Math.round(Math.random() * 3) + 1
+    beforeOpen() {
+      this.bugCount = Math.round(Math.random() * 3) + 1;
     },
 
-    beforeClose (event) {
+    beforeClose(event) {
       if (this.bugCount > 0) {
-        this.hasBugs = true
+        this.hasBugs = true;
         /*
         Stopping close event execution
         */
-        event.stop()
+        event.stop();
       }
     }
   }
-}
+};
 </script>
 <style lang="scss">
 

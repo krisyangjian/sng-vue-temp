@@ -8,20 +8,22 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(prop, name) in props">
+      <tr
+        v-for="(prop, name) in props"
+        :key="name">
         <td>
-          {{name}}
+          {{ name }}
         </td>
         <td>
           <template v-if="Array.isArray(prop.type)">
-            {{prop.type.map(v => v.name).join(' / ')}}
+            {{ prop.type.map(v => v.name).join(' / ') }}
           </template>
           <template v-else>
-            <span>{{prop.type.name}}</span>
+            <span>{{ prop.type.name }}</span>
           </template>
         </td>
         <td>
-          {{prop.default}}
+          {{ prop.default }}
         </td>
       </tr>
     </tbody>
@@ -30,7 +32,7 @@
 <script>
 export default {
   name: 'PropsTable',
-  data () {
+  data() {
     return {
       props: {
         name: {
@@ -85,9 +87,9 @@ export default {
           default: 0.5
         }
       }
-    }
+    };
   }
-}
+};
 </script>
 <style lang="scss">
 table.props {

@@ -1,7 +1,8 @@
 <template>
-  <modal name="conditional-modal"
-         :adaptive="true"
-         @before-open="beforeOpen">
+  <modal
+    name="conditional-modal"
+    :adaptive="true"
+    @before-open="beforeOpen">
     <div style="padding:30px; text-align: center">
       Hello!
     </div>
@@ -11,14 +12,14 @@
 export default {
   name: 'ConditionalModal',
   methods: {
-    beforeOpen (event) {
-      console.log('Event:', event)
-      console.log('Params:', event.params)
+    beforeOpen(event) {
+      console.log('Event:', event);
+      console.log('Params:', event.params);
 
       if (event.params.show === false) {
-        event.stop()
+        event.stop();
       }
     },
   }
-}
+};
 </script>
