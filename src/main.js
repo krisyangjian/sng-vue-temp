@@ -28,5 +28,3 @@ new Vue({ // eslint-disable-line
   },
   template: '<App/>'
 });
-console.log(`env................${process.env.NODE_ENV}`);
-

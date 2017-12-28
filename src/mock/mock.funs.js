@@ -9,8 +9,8 @@ const mockFuns = {
 	 * @return 返回mock数据
 	 */
   setMockData: (template = null, data, req) => {
-    let result = {},
-      valid = [];
+    let result = {};
+    let valid = [];
     if (template) {
       valid = Mock.valid(template, JSON.parse(req.body));
     }

@@ -3,7 +3,7 @@ import _ResCode from './http.intcp.code';
 import _ResError from './http.intcp.error';
 
 export default {
-	ReqHeader:_ReqHeader,
-	ResCode:_ResCode,
-	ResError:_ResError
-}
+  ReqHeader: _ReqHeader,
+  ResCode: _ResCode,
+  ResError: _ResError
+};
