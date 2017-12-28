@@ -3,7 +3,7 @@ import Vue from 'vue';
 Vue.directive('bgColor', {
   bind(el, binding) {
     $(el).css('background', '#FF3D00'); // eslint-disable-line
-    binding();
+    console.log(binding);
   },
   update(el, val) {
     $(el).css('background', val.value.color.bgcolor); // eslint-disable-line

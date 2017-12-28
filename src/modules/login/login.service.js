@@ -1,13 +1,14 @@
 import HttpUtils from '../../utils/http.utils';
+
 const urls = {
-    'list': globalConfig.apiPath.v1 + 'api/auth/v1/users/list1',
-}
-
-
-let Module1Srv = {
-	getDataList: function (params = {}){
-    	return HttpUtils.get(urls.list,params);
-    }
+  'list': `${globalConfig.apiPath.v1}api/auth/v1/users/list1`,
 };
 
-export {Module1Srv};
+
+const Module1Srv = {
+  getDataList(params = {}) {
+    	return HttpUtils.get(urls.list, params);
+  }
+};
+
+export { Module1Srv };
