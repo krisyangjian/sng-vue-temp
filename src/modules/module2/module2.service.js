@@ -1,7 +1,7 @@
 import HttpUtils from '../../utils/http.utils';
 
 const urls = {
-  'list': `${globalConfig.apiPath.v1}api/auth/v1/users/list2`,
+  'list': `${globalConfig.apiPath.v1}api/auth/v1/users/list2`, // eslint-disable-line
 };
 
 
@@ -11,4 +11,4 @@ const Module2Srv = {
   }
 };
 
-export { Module2Srv };
+export default Module2Srv;

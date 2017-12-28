@@ -9,26 +9,25 @@ import Module2Routers from '../modules/module2/module2.router';
 
 Vue.use(Router);
 
-let router = new Router({
-    //mode: 'history',
-    //hashbang:false,
-	routes: [
-		...Module1Routers,
-		...Module2Routers,
-		...LoginRouters,
-		...LayoutRouters
-	]
+const router = new Router({
+  // mode: 'history',
+  // hashbang:false,
+  routes: [
+    ...Module1Routers,
+    ...Module2Routers,
+    ...LoginRouters,
+    ...LayoutRouters
+  ]
 });
 
 
 function GlobalRouterPlugin() {}
-GlobalRouterPlugin.install = function(Vue, options) {
-	Vue.getRouter = function() {
-		return router;
-	};
+GlobalRouterPlugin.install = function (Vue, options) { // eslint-disable-line
+  Vue.getRouter = function () { // eslint-disable-line
+    return router;// eslint-disable-line
+  };// eslint-disable-line
+  console.log(options);
 };
 Vue.use(GlobalRouterPlugin);
 
-export {
-	router
-};
+export default router;

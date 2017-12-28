@@ -27,7 +27,8 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 'off',
     'global-require': 'off', //全局的require
     'no-debugger': process.env.NODE_ENV === 'development'? 0 : 2,
-    'no-alert': process.env.NODE_ENV === 'development'? 0: 2,
-    'no-console': 'off' //暂时先关掉，因为prod也有可能需要输入
+    'no-alert': process.env.NODE_ENV === 'development'? 0 : 2,
+    'no-console': 'off', //暂时先关掉，因为prod也有可能需要输入
+    'no-param-reassign': 'off'
   }
 }

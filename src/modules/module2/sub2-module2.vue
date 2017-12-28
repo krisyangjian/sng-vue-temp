@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { Module2Srv } from './module2.service';
+import Module2Srv from './module2.service';
 
 
 export default {

@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { Module1Srv } from './module1.service';
+import Module1Srv from './module1.service';
 
 export default {
   components: {

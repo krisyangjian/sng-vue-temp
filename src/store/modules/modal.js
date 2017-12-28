@@ -1,7 +1,6 @@
 
 const modalOptions = {
   state: {
-
     minWidth: 300,
    	minHeight: 200,
    	pivotX: 0.5,
