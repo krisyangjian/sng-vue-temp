@@ -29,5 +29,4 @@ GlobalRouterPlugin.install = function (Vue, options) { // eslint-disable-line
   console.log(options);
 };
 Vue.use(GlobalRouterPlugin);
-
 export default router;
