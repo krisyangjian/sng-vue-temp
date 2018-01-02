@@ -18,7 +18,7 @@ const messages = {
 console.log(this);
 
 const i18n = new VueI18n({
-  locale: 'us',
+  locale: 'cn',
   messages
 });
 

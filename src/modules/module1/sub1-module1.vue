@@ -53,7 +53,9 @@ export default {
     'form.name': {
       handler(val, oldval) {
         console.log(`${val}====${oldval}`);
-        this.$store.commit('SET_USERNAME', val);
+        // const s = this.$store.commit('SET_USERNAME', val);
+        // console.log(s);
+        this.$store.dispatch('CHANGE_NAME', val);
       },
       deep: true// 对象内部的属性监听，也叫深度监听
     }

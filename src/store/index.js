@@ -15,4 +15,5 @@ const store = new Vuex.Store({
   getters
 });
 
+
 export default store;

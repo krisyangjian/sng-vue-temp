@@ -12,6 +12,7 @@ import i18n from './utils/i18n.utils';
 import './directives';
 import './mock';
 
+
 Vue.use(ElementUI);
 Vue.use(comfuns);
 Vue.use(VModal, { dialog: true });
