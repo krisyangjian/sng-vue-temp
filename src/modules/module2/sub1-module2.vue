@@ -116,12 +116,12 @@
 </template>
 
 <script>
-import ModesTable from '../../components/modal/ModesTable.vue';
-import DemoErrorModal from '../../components/modal/DemoErrorModal.vue';
-import DemoFocusModal from '../../components/modal/InputFocusModal.vue';
-import DemoLoginModal from '../../components/modal/DemoLoginModal.vue';
-import DemoDogProfileModal from '../../components/modal/DogProfileModal.vue';
-import DemoConditionalModal from '../../components/modal/ConditionalModal.vue';
+import ModesTable from '../../components/common/modal/ModesTable.vue';
+import DemoErrorModal from '../../components/common/modal/DemoErrorModal.vue';
+import DemoFocusModal from '../../components/common/modal/InputFocusModal.vue';
+import DemoLoginModal from '../../components/common/modal/DemoLoginModal.vue';
+import DemoDogProfileModal from '../../components/common/modal/DogProfileModal.vue';
+import DemoConditionalModal from '../../components/common/modal/ConditionalModal.vue';
 import CreateModal from './create.modal.vue';
 
 // import { Module2Srv } from './module2.service';

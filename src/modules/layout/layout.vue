@@ -21,8 +21,8 @@
 
 
 <script>
-import MegHeader from '@/components/layout/header';
-import MegMenu from '@/components/layout/menu';
+import MegHeader from '@/components/local/layout/header';
+import MegMenu from '@/components/local/layout/menu';
 
 export default {
   name: 'Layout',
