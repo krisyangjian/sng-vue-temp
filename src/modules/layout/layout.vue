@@ -19,6 +19,7 @@
 
 </template>
 
+
 <script>
 import MegHeader from '@/components/layout/header';
 import MegMenu from '@/components/layout/menu';

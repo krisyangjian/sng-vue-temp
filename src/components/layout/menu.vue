@@ -1,42 +1,33 @@
 <template>
   <div style="height: 100%;">
-    <el-menu
-      default-active="1-1"
+    <!-- <el-menu
+      :router="true"
       :unique-opened="true"
       class="el-menu-vertical-demo"
       @open="handleOpen"
       @close="handleClose"
       :collapse="isCollapse"
       style="height:900px;">
-      <el-submenu
-        index="1"
-        :open="handleOpen()">
-        <template slot="title">
-          <i class="el-icon-location"></i>
-          <span slot="title">Module1</span>
-        </template>
-        <router-link to="/module1/sub1">
-          <el-menu-item index="1-1">选项1</el-menu-item>
-        </router-link>
-        <router-link to="/module1/sub2">
-          <el-menu-item index="1-2">选项2</el-menu-item>
-        </router-link>
-      </el-submenu>
-      <el-submenu index="2">
-        <template slot="title">
-          <i class="el-icon-location"></i>
-          <span slot="title">Module2</span>
-        </template>
-        <router-link to="/module2/sub1">
-          <el-menu-item index="2-1">选项1</el-menu-item>
-        </router-link>
-        <router-link to="/module2/sub2">
-          <el-menu-item index="2-2">选项2</el-menu-item>
-        </router-link>
-      </el-submenu>
-    </el-menu>
+      <el-menu-item index="/module1/sub1">模块1-1</el-menu-item>
+      <el-menu-item index="/module1/sub2">模块1-2</el-menu-item>
+      <el-menu-item index="/module2/sub1">模块2-1</el-menu-item>
+      <el-menu-item index="/module2/sub2">模块2-2</el-menu-item>
+    </el-menu> -->
+    <ul class="sub-menu">
+      <router-link
+        to="/module1/sub1"
+        tag="li">模块1-1</router-link>
+      <router-link
+        to="/module1/sub2"
+        tag="li">模块1-2</router-link>
+      <router-link
+        to="/module2/sub1"
+        tag="li">模块2-1</router-link>
+      <router-link
+        to="/module2/sub2"
+        tag="li">模块2-2</router-link>
+    </ul>
   </div>
-
 </template>
 
 <script>
@@ -61,5 +52,16 @@ export default {
 	.el-menu-vertical-demo:not(.el-menu--collapse) {
 		width: 200px;
 		min-height: 400px;
-	}
+  }
+  .sub-menu li {
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 50px;
+    cursor: pointer;
+  }
+  .sub-menu li.router-link-active {
+    color:#21539b;
+    background-color: #ecf5ff;
+  }
 </style>

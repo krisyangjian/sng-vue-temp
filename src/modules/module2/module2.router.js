@@ -4,6 +4,7 @@ export default [{
   path: '/module2',
   name: 'module2',
   component: Layout,
+  redirect: '/module2/sub1',
   hidden: true,
   children: [{
     path: 'sub1',

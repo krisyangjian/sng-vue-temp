@@ -5,7 +5,7 @@ export default [{
   name: 'module1',
   component: Layout,
   hidden: true,
-  redirect: 'sub1',
+  redirect: '/module1/sub1',
   children: [{
     path: 'sub1',
     component: (resolve) => {

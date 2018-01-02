@@ -1,7 +1,7 @@
 import HttpUtils from '../../utils/http.utils';
 
 const urls = {
-  'list': `${globalConfig.apiPath.v1}api/auth/v1/users/list1`, // eslint-disable-line
+  'list': `${globalConfig.apiPath.v1}api/auth/v1/users/list1`,
 };
 
 

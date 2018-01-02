@@ -5,7 +5,6 @@ import 'element-ui/lib/theme-chalk/index.css';
 import './scss/index.scss';
 import VModal from 'vue-js-modal';
 
-
 import router from './utils/router.utils';
 import store from './store';
 import comfuns from './utils/com.utils';
